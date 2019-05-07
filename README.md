@@ -9,7 +9,7 @@
 
   [![Lecture 00](https://img.youtube.com/vi/97-_OnbwF5M/0.jpg)](https://www.youtube.com/watch?v=97-_OnbwF5M)
 
-- Exampleフォルダにあるデータはこの講座であらかじめ用意されていたものになります。
+- Etc, Exampleフォルダにあるデータはこの講座であらかじめ用意されていたものになります。
 
 - 本プロジェクトで作成したユニティちゃんボールロールは「unityroom」でもプレイすることができます。
   - https://unityroom.com/games/unitychan-ball-roll-iio_ver
