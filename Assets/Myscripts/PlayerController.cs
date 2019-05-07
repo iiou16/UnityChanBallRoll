@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         getSE = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
+    // fpsによらず一定間隔でUpdate
     void FixedUpdate()
     {
         float moveH = Input.GetAxis("Horizontal");
@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // アイテムを取得したときの処理
         if (other.gameObject.CompareTag("Item"))
         {
             other.gameObject.SetActive(false);
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
 
             getSE.Play();
         }
+        // 落ちたとき(GameOver)の処理
         else if (other.gameObject.CompareTag("Bottom"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
